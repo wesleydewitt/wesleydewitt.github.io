@@ -31,11 +31,11 @@
 
   });
 
-  $(window).on('load', function () {
+  /*$(window).on('load', function () {
     $(window).on('resize', function () {
 
     }).trigger('resize');
 
-  });
+  });*/
 
 })(jQuery);
