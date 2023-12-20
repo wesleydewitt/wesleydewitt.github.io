@@ -26,7 +26,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: #000000;
     font-weight: 400;
-    //margin: 2*$base-unit 0 $base-unit;
 }
 
 h1 + p {
@@ -64,14 +63,6 @@ h1 + p {
 
 .bio {
     grid-column: span 3;
-}
-
-@media (max-width: calc($page-width + (8*$base-unit))) {
-    
-}
-
-@media (max-width: $page-width) {
-    
 }
 
 @media (prefers-color-scheme: dark) {
