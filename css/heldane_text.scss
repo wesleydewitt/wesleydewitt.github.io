@@ -1,0 +1,99 @@
+body {
+    //background-color: pink !important;
+}
+
+@font-face {
+    font-family: 'Font Famliy';
+    font-weight: 400;
+    font-style: normal;
+    src: url('webfont.eot'); /* IE9 Compat Modes */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('webfont.woff22') format('woff22'), /* Super Modern Browsers */
+         url('webfont.woff2') format('woff2'), /* Pretty Modern Browsers */
+         url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'heldane';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../assets/fonts/heldane_text/test-heldane-text-light.woff2') format('woff2'); /* Pretty Modern Browsers */
+  }
+  
+  @font-face {
+    font-family: 'heldane';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../assets/fonts/heldane_text/test-heldane-text-regular.woff2') format('woff2'); /* Pretty Modern Browsers */
+  }
+  
+  @font-face {
+    font-family: 'heldane';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../assets/fonts/heldane_text/test-heldane-text-medium.woff2') format('woff2'); /* Pretty Modern Browsers */
+  }
+  
+  @font-face {
+    font-family: 'heldane';
+    font-weight: 600;
+    font-style: normal;
+    src: url('../assets/fonts/heldane_text/test-heldane-text-semibold.woff2') format('woff2'); /* Pretty Modern Browsers */
+  }
+  
+  @font-face {
+    font-family: 'heldane';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../assets/fonts/heldane_text/test-heldane-text-bold.woff2') format('woff2'); /* Pretty Modern Browsers */
+  }
+  
+  @font-face {
+    font-family: 'heldane';
+    font-weight: 800;
+    font-style: normal;
+    src: url('../assets/fonts/heldane_text/test-heldane-text-black.woff2') format('woff2'); /* Pretty Modern Browsers */
+  }
+  
+  @font-face {
+    font-family: 'heldane';
+    font-weight: 300;
+    font-style: oblique;
+    src: url('../assets/fonts/heldane_text/test-heldane-text-light-italic.woff2') format('woff2'); /* Pretty Modern Browsers */
+  }
+  
+  @font-face {
+    font-family: 'heldane';
+    font-weight: 400;
+    font-style: oblique;
+    src: url('../assets/fonts/heldane_text/test-heldane-text-regular-italic.woff2') format('woff2'); /* Pretty Modern Browsers */
+  }
+  
+  @font-face {
+    font-family: 'heldane';
+    font-weight: 500;
+    font-style: oblique;
+    src: url('../assets/fonts/heldane_text/test-heldane-text-medium-italic.woff2') format('woff2'); /* Pretty Modern Browsers */
+  }
+  
+  @font-face {
+    font-family: 'heldane';
+    font-weight: 600;
+    font-style: oblique;
+    src: url('../assets/fonts/heldane_text/test-heldane-text-semibold-italic.woff2') format('woff2'); /* Pretty Modern Browsers */
+  }
+  
+  @font-face {
+    font-family: 'heldane';
+    font-weight: 700;
+    font-style: oblique;
+    src: url('../assets/fonts/heldane_text/test-heldane-text-bold-italic.woff2') format('woff2'); /* Pretty Modern Browsers */
+  }
+  
+  @font-face {
+    font-family: 'heldane';
+    font-weight: 800;
+    font-style: oblique;
+    src: url('../assets/fonts/heldane_text/test-heldane-text-black-italic.woff2') format('woff2'); /* Pretty Modern Browsers */
+  }

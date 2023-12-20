@@ -1,0 +1,211 @@
+@charset "UTF-8";
+@import url(heldane_display.css);
+@import url(heldane_text.css);
+@import url(family.css);
+@import url(founders_grotesk.css);
+@import url(heldane.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  color: #666666;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+  font-weight: 600;
+}
+
+.index-label {
+  font-size: 10px;
+  letter-spacing: 0.125em;
+  margin: 0 0 24px;
+  text-transform: uppercase;
+}
+
+p + p, h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+  margin-top: 24px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 24px 0;
+  padding: 0 0 0 24px;
+}
+ul li {
+  display: flex;
+  position: relative;
+}
+ul li::before {
+  content: "— ";
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input[type=text] {
+  background-color: #fff;
+  border-radius: 6px;
+  border: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0 12px;
+  vertical-align: top;
+}
+
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.cover-image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  z-index: -1;
+}
+
+svg {
+  stroke: black;
+}
+
+.hide {
+  display: none;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 648px;
+  min-height: 100vh;
+  padding: 0 24px;
+}
+
+.pic-and-bio {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr) 168px;
+}
+
+.pic {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.bio {
+  grid-column: span 3;
+}
+
+.site-logo {
+  align-items: center;
+  display: flex;
+  margin: 0 0 24px 0;
+}
+.site-logo svg {
+  margin: 0 12px 0 0;
+}
+
+.social-links {
+  display: flex;
+  margin: 24px 0 0;
+}
+.social-links div + div {
+  margin: 0 0 0 24px;
+}
+.availability {
+  margin: 24px 0 0;
+}
+.availability span {
+  background-color: lime;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 9px;
+}
+
+.featured-projects {
+  margin: 72px 0 0;
+}
+
+.featured-projects-grid {
+  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.featured-projects-grid a {
+  aspect-ratio: 1/1.333;
+  background-color: #eeeeee;
+  border-radius: 6px;
+  display: block;
+}
+
+.timeline {
+  margin: 72px 0;
+}
+
+.timeline-table {
+  display: table;
+  font-size: 12px;
+  width: 100%;
+}
+
+.day {
+  display: table-row;
+}
+.day h3 {
+  border-top: 1px solid #eeeeee;
+  color: #aaaaaa;
+  display: table-cell;
+  flex-shrink: 0;
+  font-weight: inherit;
+  padding: 6px 24px 0 0;
+}
+.day ul {
+  display: table-cell;
+  flex-grow: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.day ul li:before {
+  display: none;
+}
+.day ul li {
+  border-top: 1px solid #eeeeee;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.day ul li:last-of-type {
+  padding-bottom: 24px;
+}
+
+div.day:last-of-type ul li:last-of-type {
+  padding-bottom: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

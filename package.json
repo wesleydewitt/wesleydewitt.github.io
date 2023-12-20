@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "scripts": {
+    "dev": "npx tsc --watch & sass --watch css & http-server ./ -c-1 -p 8080"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.29",
+    "typescript": "^5.3.2"
+  }
+}

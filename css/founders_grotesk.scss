@@ -1,0 +1,99 @@
+body {
+  //background-color: pink !important;
+}
+
+@font-face {
+  font-family: 'Font Family';
+  font-weight: 400;
+  font-style: normal;
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff22') format('woff22'), /* Super Modern Browsers */
+       url('webfont.woff2') format('woff2'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'founders grotesk';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../assets/fonts/founders_grotesk/test-founders-grotesk-light.woff2') format('woff2'); /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'founders grotesk';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../assets/fonts/founders_grotesk/test-founders-grotesk-regular.woff2') format('woff2'); /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'founders grotesk';
+  font-weight: 500;
+  font-style: normal;
+  src: url('../assets/fonts/founders_grotesk/test-founders-grotesk-medium.woff2') format('woff2'); /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'founders grotesk';
+  font-weight: 600;
+  font-style: normal;
+  src: url('../assets/fonts/founders_grotesk/test-founders-grotesk-semibold.woff2') format('woff2'); /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'founders grotesk';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../assets/fonts/founders_grotesk/test-founders-grotesk-bold.woff2') format('woff2'); /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'founders grotesk';
+  font-weight: 800;
+  font-style: normal;
+  src: url('../assets/fonts/founders_grotesk/test-founders-grotesk-black.woff2') format('woff2'); /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'founders grotesk';
+  font-weight: 300;
+  font-style: oblique;
+  src: url('../assets/fonts/founders_grotesk/test-founders-grotesk-light-italic.woff2') format('woff2'); /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'founders grotesk';
+  font-weight: 400;
+  font-style: oblique;
+  src: url('../assets/fonts/founders_grotesk/test-founders-grotesk-regular-italic.woff2') format('woff2'); /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'founders grotesk';
+  font-weight: 500;
+  font-style: oblique;
+  src: url('../assets/fonts/founders_grotesk/test-founders-grotesk-medium-italic.woff2') format('woff2'); /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'founders grotesk';
+  font-weight: 600;
+  font-style: oblique;
+  src: url('../assets/fonts/founders_grotesk/test-founders-grotesk-semibold-italic.woff2') format('woff2'); /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'founders grotesk';
+  font-weight: 700;
+  font-style: oblique;
+  src: url('../assets/fonts/founders_grotesk/test-founders-grotesk-bold-italic.woff2') format('woff2'); /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'founders grotesk';
+  font-weight: 800;
+  font-style: oblique;
+  src: url('../assets/fonts/founders_grotesk/test-founders-grotesk-black-italic.woff2') format('woff2'); /* Pretty Modern Browsers */
+}
