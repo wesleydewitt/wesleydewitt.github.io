@@ -7,6 +7,11 @@
   padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: #ffffff;
   color: #888888;
@@ -37,7 +42,7 @@ h1 + p {
   justify-content: center;
   margin: auto;
   max-width: 648px;
-  min-height: 100vh;
+  min-height: 100%;
   padding: 0 24px;
 }
 
