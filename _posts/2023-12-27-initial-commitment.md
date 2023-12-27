@@ -1,6 +1,6 @@
 ---
 title: Initial Commitment
-date: 2023-12-27 13:57 -0500
+date: 2023-12-27 13:57
 ---
 
 Hey, I'm Wesley. I'm an IT technician and student at Ball State University, where I work in the Operations Control Center and study computer science. I have over 5 years of informal experience with the vicissitudes of designing and programming web UIs. Building on this experience to become a full-stack engineer is the aim of the current phase of my life. And, while I'm going to school part-time, I want to utilize my proficiency with HTML, CSS, and JavaScript to get a job in web development.
