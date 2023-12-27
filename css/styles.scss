@@ -1,11 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+---
+---
 
-$base-unit : 24px;
-$base-font-size : 16px;
-$border-radius: 6px;
-$page-width : 25*$base-unit;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-$sans-font: -apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', sans-serif;
+$base-unit : 21px;
+$base-font-size : 14px;
+$border-radius: 8px;
+$page-width : 30*$base-unit;
+$page-width : (3*$base-unit*10)+(2*$base-unit);
+
+$sans-font : -apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', sans-serif;
+$mono-font : Menlo, monospace;
+
+$link-color : #000000;
+$link-color-dark-mode : #eeeeee;
+
+$body-color : #000000;
+$body-color-dark-mode : #eeeeee;
+
+$gray-color : #808080;
+$gray-color-dark-mode : #606060;
+
+$gray-line-color : #e7e7e7;
+$gray-line-color-dark-mode : #303030;
+
+$background-color : #ffffff;
+$background-color-dark-mode : #000000;
+
+$article-bg-color : #f0f0f0;
+$article-bg-color-dark-mode : #171717;
+
 
 * {
     box-sizing: border-box;
@@ -15,67 +39,282 @@ $sans-font: -apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', sans-s
     padding: 0;
 }
 
-html,
 body {
-    height: 100%;
-}
-
-body {
-    background-color: #ffffff;
-    color: #888888;
+    background-color: $background-color;
+    color: $body-color;
     font-family: $sans-font;
     font-size: $base-font-size;
     line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #000000;
-    font-weight: 400;
+    color: inherit;
+    font-weight: inherit;
 }
 
-h1 + p {
-    margin-top: $base-unit;
+p {
+    margin: 1.5em 0;
 }
 
-.cover-image {
+ul {
+    list-style-type: none;
+    margin: 1.5em 0;
+    padding: 0 0 0 1.5em;
+
+    li {
+        display: flex;
+        position: relative;
+    }
+
+    li::before {
+        content: '—\00A0';
+        display: block;
+    }
+}
+
+ol {
+    margin: 1.5em 0;
+    padding: 0 0 0 3em;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+
+pre {
+    overflow-x: scroll;
+}
+
+code {
+    font-family: $mono-font;
+    font-size: 12px;
+}
+
+hr {
+    border: none;
+}
+
+hr::after {
+    content: "";
     display: block;
-    height: 100%;
-    object-fit: cover;
+    height: 0px;
+    padding: 0;
+}
+
+img {
+    display: block;
     width: 100%;
 }
 
-.page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    max-width: $page-width+2*$base-unit;
-    min-height: 100%;
-    padding: 0 1*$base-unit;
+svg {
+    display: block;
+    stroke: $body-color;
 }
 
-.pic-and-bio {
+.page {
+    margin: auto;
+    max-width: $page-width+8*$base-unit;
+    padding: 0 4*$base-unit;
+}
+
+.header {
     display: grid;
     gap: $base-unit;
-    grid-template-columns: repeat(3, 1fr) 5*$base-unit;
-    margin: $base-unit 0;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4*$base-unit 0;
 }
 
 .pic {
     border-radius: $border-radius;
+    border-radius: 120px;
     overflow: hidden;
+    max-width: 10*$base-unit;
 }
 
-.bio {
+.text {
+    grid-column: span 2;
+}
+
+.contact {
+    display: table;
+    margin: $base-unit 0 0;
+    padding: 0;
+}
+
+.contact-row {
+    display: table-row;
+
+    span {
+        display: table-cell;
+    }
+}
+
+.contact-row::before {
+    content: "";
+    display: none;
+}
+
+.contact-row + .contact-row {
+
+    span {
+        padding-top: .5*$base-unit;
+    }
+}
+
+.contact-label {
+    color: $gray-color;
+    padding: 0 $base-unit 0 0;
+}
+
+.timeline {
+    margin: 4*$base-unit 0;
+}
+
+.day {
+    border-top: 1px solid $gray-line-color;
+    display: grid;
+    gap: $base-unit;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 0 3em;
+}
+
+.day + .day {
+    margin-top: 1.5em;
+}
+
+.day:last-of-type {
+    margin: 0;
+}
+
+.day-label {
+    align-self: start;
+    background-color: $background-color;
+    color: $gray-color;
+    font-weight: inherit;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    padding: 1.5em 0;
+    z-index: +9;
+}
+
+.posts {
     grid-column: span 3;
+}
+
+.article {
+    background-color: $article-bg-color;
+    border-radius: $border-radius;
+    display: block;
+    margin: 1.5em 0;
+    padding: 3em;
+    width: 100%;
+}
+
+.article:last-of-type {
+    margin-bottom: 0;
+}
+
+.article-head {
+    display: flex;
+}
+
+.article-title {
+    flex-grow: 1;
+    margin: 0 $base-unit 0 0;
+}
+
+.date {
+    color: $gray-color;
+}
+
+.article-body {
+
+    h1, h2, h3, h4, h5, h6 {
+        font-style: oblique;
+        margin: 3em 0 1.5em;
+    }
+
+    a {
+        color: inherit;
+        border-bottom: 1px solid $link-color;
+    }
+
+    a:hover {
+        color: $link-color;
+    }
+
+    p:last-of-type::after {
+        content: '\00A0\2022';
+    }
+
+    *:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .day {
+        display: block;
+    }
+
+    .article:first-of-type {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: calc($page-width * (9/10))) {
+    .header {
+        margin-top: $base-unit;
+    }
+
+    .page {
+        padding: 0 $base-unit;
+    }
+
+    .timeline {
+        margin-bottom: $base-unit;
+    }
+
+    .article {
+        padding: 1.5em;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #000000;
+        background-color: $background-color-dark-mode;
+        color: $body-color-dark-mode;
     }
 
-    h1 {
-        color: #ffffff
+    a {
+        color: $link-color-dark-mode
+    }
+
+    .day {
+        border-top: 1px solid $gray-line-color-dark-mode;
+    }
+
+    .day-label {
+        background-color: $background-color-dark-mode;
+    }
+
+    .article {
+        background-color: $article-bg-color-dark-mode;
+    }
+
+    .article-body a {
+        border-bottom: 1px solid $link-color-dark-mode;
+    }
+
+    .article-body a:hover {
+        color: $link-color-dark-mode;
+    }
+
+    .contact-label,
+    .day-label,
+    .article-title span {
+        color: $gray-color-dark-mode;
     }
 }
