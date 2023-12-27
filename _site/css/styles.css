@@ -218,12 +218,12 @@ svg {
     margin-top: 0;
   }
 }
-@media (max-width: 604.8px) {
+@media (max-width: 600px) {
   .header {
     margin-top: 21px;
   }
   .page {
-    padding: 0 21px;
+    padding: 0 21px !important;
   }
   .timeline {
     margin-bottom: 21px;

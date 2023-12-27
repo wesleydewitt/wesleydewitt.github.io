@@ -264,13 +264,13 @@ svg {
     }
 }
 
-@media (max-width: calc($page-width * (9/10))) {
+@media (max-width: 600px) {
     .header {
         margin-top: $base-unit;
     }
 
     .page {
-        padding: 0 $base-unit;
+        padding: 0 $base-unit !important;
     }
 
     .timeline {
