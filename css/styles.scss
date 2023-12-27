@@ -1,15 +1,13 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 $base-unit : 21px;
 $base-font-size : 14px;
 $border-radius: 8px;
 $page-width : 30*$base-unit;
 $page-width : (3*$base-unit*10)+(2*$base-unit);
 
-$sans-font : -apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', sans-serif;
+$sans-font : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $mono-font : Menlo, monospace;
 
 $link-color : #000000;
