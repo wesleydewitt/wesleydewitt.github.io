@@ -54,24 +54,32 @@ description: I am a developer and designer from Indiana. My career is oriented a
                 <div class="timeline">
                     {% for post in site.posts limit:10 %}
                         {% assign currentdate = post.date | date: "%-d %B %Y" %}
+                        
                         {% if currentdate != date %}
                             {% unless forloop.first %}</div></div>{% endunless %}
+
                             <div class="day">
                                 <h2 class="day-label">{{ post.date | date: "%A" }}<br>{{ currentdate }}</h2>
                                 <div class="posts">
+
                             {% assign date = currentdate %}
                         {% endif %}
+
                                     <article class="article">
                                         <div class="article-head">
+
                                             {% if post.title %}
                                                 <h3 class="article-title">{{ post.title }}</h3>
                                             {% endif %}
+
                                             <div class="date">{{ post.date | date: "%-I:%M %p" }}</div>
                                         </div>
+
                                         <div class="article-body">
                                             {{ post.content }}
                                         </div>
                                     </article>
+
                         {% if forloop.last %}
                                 </div>
                             </div>
