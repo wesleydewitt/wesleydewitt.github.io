@@ -104,30 +104,30 @@ svg {
 }
 
 .contact {
-  display: table;
   margin: 21px 0 0;
   padding: 0;
 }
 
 .contact-row {
-  display: table-row;
+  align-items: center;
+  display: flex;
 }
-.contact-row span {
-  display: table-cell;
-}
-
 .contact-row::before {
   content: "";
   display: none;
 }
 
-.contact-row + .contact-row span {
-  padding-top: 10.5px;
+.contact-row + .contact-row {
+  margin: 10.5px 0 0;
 }
-
 .contact-label {
   color: #808080;
-  padding: 0 21px 0 0;
+  padding: 0 15.75px 0 0;
+}
+.contact-label img {
+  height: 14px;
+  width: 14px;
+  margin: 2px 0 0;
 }
 
 .timeline {
@@ -235,10 +235,13 @@ svg {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #000000;
-    color: #eeeeee;
+    color: #f0f0f0;
   }
   a {
-    color: #eeeeee;
+    color: #f0f0f0;
+  }
+  .contact-label svg {
+    fill: #f0f0f0;
   }
   .day {
     border-top: 1px solid #303030;
@@ -250,10 +253,10 @@ svg {
     background-color: #171717;
   }
   .article-body a {
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #f0f0f0;
   }
   .article-body a:hover {
-    color: #eeeeee;
+    color: #f0f0f0;
   }
   .contact-label,
   .day-label,

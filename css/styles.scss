@@ -11,10 +11,10 @@ $sans-font : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, A
 $mono-font : Menlo, monospace;
 
 $link-color : #000000;
-$link-color-dark-mode : #eeeeee;
+$link-color-dark-mode : #f0f0f0;
 
 $body-color : #000000;
-$body-color-dark-mode : #eeeeee;
+$body-color-dark-mode : #f0f0f0;
 
 $gray-color : #808080;
 $gray-color-dark-mode : #606060;
@@ -136,16 +136,17 @@ svg {
 }
 
 .contact {
-    display: table;
+    //display: table;
     margin: $base-unit 0 0;
     padding: 0;
 }
 
 .contact-row {
-    display: table-row;
+    align-items: center;
+    display: flex;
 
     span {
-        display: table-cell;
+        //display: table-cell;
     }
 }
 
@@ -155,15 +156,22 @@ svg {
 }
 
 .contact-row + .contact-row {
+    margin: .5*$base-unit 0 0;
 
     span {
-        padding-top: .5*$base-unit;
+        //padding-top: .5*$base-unit;
     }
 }
 
 .contact-label {
     color: $gray-color;
-    padding: 0 $base-unit 0 0;
+    padding: 0 .75*$base-unit 0 0;
+
+    img {
+        height: 14px;
+        width: 14px;
+        margin: 2px 0 0;
+    }
 }
 
 .timeline {
@@ -289,6 +297,10 @@ svg {
 
     a {
         color: $link-color-dark-mode
+    }
+
+    .contact-label svg {
+        fill: $body-color-dark-mode;
     }
 
     .day {
