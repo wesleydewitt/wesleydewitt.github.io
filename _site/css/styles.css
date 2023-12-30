@@ -83,7 +83,7 @@ svg {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: center;
+  justify-content: space-around;
   margin: auto;
   max-width: 840px;
   padding: 0 84px;
@@ -223,9 +223,6 @@ svg {
   }
 }
 @media (max-width: 600px) {
-  .header {
-    margin-top: 21px;
-  }
   .page {
     padding: 0 21px !important;
   }

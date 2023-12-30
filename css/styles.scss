@@ -115,7 +115,7 @@ svg {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    justify-content: center;
+    justify-content: space-around;
     margin: auto;
     max-width: $page-width+8*$base-unit;
     padding: 0 4*$base-unit;
@@ -277,7 +277,7 @@ svg {
 
 @media (max-width: 600px) {
     .header {
-        margin-top: $base-unit;
+        //margin-top: $base-unit;
     }
 
     .page {
