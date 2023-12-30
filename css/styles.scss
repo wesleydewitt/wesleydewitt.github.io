@@ -125,7 +125,7 @@ svg {
     display: grid;
     gap: $base-unit;
     grid-template-columns: repeat(3, 1fr);
-    margin: 4*$base-unit 0;
+    margin: 1*$base-unit 0 6*$base-unit;
 }
 
 .pic {

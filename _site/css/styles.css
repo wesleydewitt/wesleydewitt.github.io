@@ -93,7 +93,7 @@ svg {
   display: grid;
   gap: 21px;
   grid-template-columns: repeat(3, 1fr);
-  margin: 84px 0;
+  margin: 21px 0 126px;
 }
 
 .pic {
