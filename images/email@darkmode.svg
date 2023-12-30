@@ -5,6 +5,6 @@
         }
     </style>
 
-    <rect x="0.75" y="0.75" width="12.5" height="8.5" stroke="black" stroke-width="1.25"/>
-    <path d="M0.5 2.5L7 5L13.5 2.5" stroke="black" stroke-width="1.25"/>
+    <rect x="0.5" y="0.5" width="13" height="9" stroke="black"/>
+    <path d="M0.5 2.5L7 6L13.5 2.5" stroke="black"/>
 </svg>
