@@ -80,6 +80,10 @@ svg {
 }
 
 .page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
   margin: auto;
   max-width: 840px;
   padding: 0 84px;
