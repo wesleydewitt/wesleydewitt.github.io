@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: #ffffff;
   color: #000000;
@@ -82,7 +86,7 @@ svg {
 .page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   justify-content: space-around;
   margin: auto;
   max-width: 840px;
