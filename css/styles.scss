@@ -1,8 +1,8 @@
 ---
 ---
 
-$base-unit : 21px;
-$base-font-size : 14px;
+$base-unit : 24px;
+$base-font-size : 16px;
 $border-radius: 8px;
 $page-width : 30*$base-unit;
 $page-width : (3*$base-unit*10)+(2*$base-unit);
@@ -176,9 +176,7 @@ svg {
     padding: 0 .75*$base-unit 0 0;
 
     img {
-        height: 14px;
-        width: 14px;
-        margin: 2px 0 0;
+        margin: 3px 0 0;
     }
 }
 
